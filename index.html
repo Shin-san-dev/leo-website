@@ -106,6 +106,23 @@
   }
   .header-call svg{ width:14px; height:14px; flex-shrink:0; }
 
+  .header-app{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:0.95rem;
+    font-weight:500;
+    text-decoration:none;
+    color:var(--bg);
+    background:var(--accent);
+    padding:9px 18px;
+    border-radius:2px;
+    transition:background .2s ease;
+    white-space:nowrap;
+  }
+  .header-app:hover{ background:#d4b46e; }
+  .header-app svg{ width:14px; height:14px; flex-shrink:0; }
+
   .header-right{
     display:flex;
     align-items:center;
@@ -142,9 +159,9 @@
   @media (max-width:760px){
     nav{ display:none; }
     .menu-toggle{ display:flex; }
-    .header-call .call-text{ display:none; }
-    .header-call{ padding:9px; }
-    .header-call svg{ width:16px; height:16px; }
+    .header-call .call-text, .header-app .call-text{ display:none; }
+    .header-call, .header-app{ padding:9px; }
+    .header-call svg, .header-app svg{ width:16px; height:16px; }
   }
 
   /* ---------- HERO ---------- */
@@ -495,6 +512,10 @@
       <a href="#contact">Contact</a>
     </nav>
     <div class="header-right">
+      <a class="header-app" href="https://app.leolamiral.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span class="call-text">Espace client</span>
+      </a>
       <a class="header-call" href="tel:0629685298">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         <span class="call-text">06 29 68 52 98</span>
@@ -505,6 +526,7 @@
     </div>
   </div>
   <div class="mobile-menu" id="mobile-menu">
+    <a href="https://app.leolamiral.com">Espace client</a>
     <a href="#approche">Approche</a>
     <a href="#zone">Zone</a>
     <a href="#contact">Contact</a>
