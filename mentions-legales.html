@@ -14,7 +14,7 @@
     --bg-panel: #16140f;
     --fg: #f3ede2;
     --fg-muted: #9a9284;
-    --fg-faint: #6b6459;
+    --fg-faint: #8a8275;
     --accent: #c2a15f;
     --line: rgba(243,237,226,0.12);
     --line-strong: rgba(243,237,226,0.22);
@@ -30,6 +30,7 @@
     padding:0 0 80px;
   }
   .wrap{ max-width:760px; margin:0 auto; padding:0 32px; }
+  @media (max-width:760px){ .wrap{ padding:0 20px; } }
   header{
     border-bottom:1px solid var(--line);
     padding:24px 0;
@@ -74,6 +75,7 @@
     margin-bottom:20px;
   }
   a{ color:var(--accent); }
+  :focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
   ul{ color:var(--fg-muted); padding-left:20px; }
 </style>
 </head>
