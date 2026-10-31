@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mentions légales — Léo Lamiral</title>
 <meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -14,11 +16,10 @@
     --bg-panel: #16140f;
     --fg: #f3ede2;
     --fg-muted: #9a9284;
-    --fg-faint: #6b6459;
+    --fg-faint: #8a8275;
     --accent: #c2a15f;
     --line: rgba(243,237,226,0.12);
     --line-strong: rgba(243,237,226,0.22);
-    --todo: #e07a4f;
   }
   *{ box-sizing:border-box; }
   body{
@@ -30,6 +31,7 @@
     padding:0 0 80px;
   }
   .wrap{ max-width:760px; margin:0 auto; padding:0 32px; }
+  @media (max-width:760px){ .wrap{ padding:0 20px; } }
   header{
     border-bottom:1px solid var(--line);
     padding:24px 0;
@@ -55,33 +57,26 @@
     padding-bottom:12px;
   }
   p{ color:var(--fg-muted); margin:0 0 14px; }
-  .todo{
-    display:inline-block;
-    color:var(--todo);
-    background:rgba(224,122,79,0.1);
-    border:1px dashed rgba(224,122,79,0.5);
-    padding:1px 8px;
-    border-radius:2px;
-    font-size:0.92em;
-  }
-  .todo-banner{
-    background:rgba(224,122,79,0.08);
-    border:1px solid rgba(224,122,79,0.4);
-    color:#e8b9a2;
-    padding:18px 22px;
-    border-radius:2px;
-    font-size:0.92rem;
-    margin-bottom:20px;
-  }
   a{ color:var(--accent); }
+  :focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
   ul{ color:var(--fg-muted); padding-left:20px; }
+  /* logo LL : dessin fourni, sans le fond carré */
+  .logo{ display:flex; align-items:center; gap:12px; }
+  .logo-mark{ width:44px; height:44px; flex-shrink:0; }
 </style>
 </head>
 <body>
 
 <header>
   <div class="wrap">
-    <div class="logo">Léo Lamiral</div>
+    <div class="logo">
+      <svg class="logo-mark" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+        <circle cx="100" cy="100" r="78" fill="none" stroke="#c2a15f" stroke-width="1.5" stroke-dasharray="5 9" stroke-linecap="round" opacity="0.8"/>
+        <g fill="#c2a15f" stroke="#0d0c0a" stroke-width="3" paint-order="stroke"><rect x="22" y="80" width="9" height="40" rx="2.5"/><rect x="33" y="86" width="6" height="28" rx="2"/><rect x="161" y="86" width="6" height="28" rx="2"/><rect x="169" y="80" width="9" height="40" rx="2.5"/></g><g fill="#c2a15f"><rect x="37" y="97.5" width="11" height="5" rx="1.5"/><rect x="152" y="97.5" width="11" height="5" rx="1.5"/></g>
+        <text x="100" y="134" text-anchor="middle" font-family="Instrument Serif, serif" font-size="98" fill="#f3ede2" letter-spacing="-1">LL</text>
+      </svg>
+      Léo Lamiral
+    </div>
     <a href="/">← Retour au site</a>
   </div>
 </header>
@@ -89,20 +84,16 @@
 <div class="wrap">
 
   <h1>Mentions légales</h1>
-  <p class="updated">Dernière mise à jour : à compléter avant mise en ligne</p>
-
-  <div class="todo-banner">
-    ⚠️ Deux champs restent <span class="todo">à compléter</span> : l'adresse (retirée pour l'instant, à décider avec Léo) et l'hébergeur (une fois le site en ligne). L'adresse du siège social est une mention légale obligatoire en France — la page ne pourra pas être publiée sans, sous une forme ou une autre.
-  </div>
+  <p class="updated">Dernière mise à jour : 31 octobre 2026</p>
 
   <h2>Éditeur du site</h2>
   <p>
     Le site est édité par : Léo Lamiral<br>
     Statut : Entrepreneur individuel<br>
     SIRET : 818 840 043 00017<br>
-    Adresse : <span class="todo">à compléter</span><br>
+    Adresse : 37 avenue du Lac, appartement 10, 34800 Clermont-l'Hérault<br>
     Téléphone : <a href="tel:0629685298">06 29 68 52 98</a><br>
-    Email : <a href="mailto:leolamiral01@gmail.com">leolamiral01@gmail.com</a>
+    Email : <a href="mailto:contact@leolamiral.com">contact@leolamiral.com</a>
   </p>
 
   <h2>Directeur de la publication</h2>
@@ -110,8 +101,9 @@
 
   <h2>Hébergement du site</h2>
   <p>
-    Nom de l'hébergeur : <span class="todo">à compléter une fois le site en ligne</span><br>
-    Adresse : <span class="todo">à compléter</span>
+    Nom de l'hébergeur : Netlify, Inc.<br>
+    Adresse : 101 2nd Street, San Francisco, CA 94105, États-Unis<br>
+    Site : <a href="https://www.netlify.com" target="_blank" rel="noopener">www.netlify.com</a>
   </p>
 
   <h2>Crédits</h2>
@@ -130,7 +122,7 @@
     Les informations transmises via le formulaire de contact (nom, coordonnées, message) sont utilisées uniquement pour répondre à votre demande et ne sont ni conservées sur un serveur, ni transmises à un tiers : le formulaire ouvre directement votre messagerie personnelle.
   </p>
   <p>
-    Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. Pour l'exercer, contactez : <a href="mailto:leolamiral01@gmail.com">leolamiral01@gmail.com</a>.
+    Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. Pour l'exercer, contactez : <a href="mailto:contact@leolamiral.com">contact@leolamiral.com</a>.
   </p>
 
   <h2>Cookies</h2>
