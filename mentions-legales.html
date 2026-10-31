@@ -20,7 +20,6 @@
     --accent: #c2a15f;
     --line: rgba(243,237,226,0.12);
     --line-strong: rgba(243,237,226,0.22);
-    --todo: #e07a4f;
   }
   *{ box-sizing:border-box; }
   body{
@@ -58,24 +57,6 @@
     padding-bottom:12px;
   }
   p{ color:var(--fg-muted); margin:0 0 14px; }
-  .todo{
-    display:inline-block;
-    color:var(--todo);
-    background:rgba(224,122,79,0.1);
-    border:1px dashed rgba(224,122,79,0.5);
-    padding:1px 8px;
-    border-radius:2px;
-    font-size:0.92em;
-  }
-  .todo-banner{
-    background:rgba(224,122,79,0.08);
-    border:1px solid rgba(224,122,79,0.4);
-    color:#e8b9a2;
-    padding:18px 22px;
-    border-radius:2px;
-    font-size:0.92rem;
-    margin-bottom:20px;
-  }
   a{ color:var(--accent); }
   :focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
   ul{ color:var(--fg-muted); padding-left:20px; }
@@ -103,18 +84,14 @@
 <div class="wrap">
 
   <h1>Mentions légales</h1>
-  <p class="updated">Dernière mise à jour : à compléter avant mise en ligne</p>
-
-  <div class="todo-banner">
-    ⚠️ Deux champs restent <span class="todo">à compléter</span> : l'adresse (retirée pour l'instant, à décider avec Léo) et l'hébergeur (une fois le site en ligne). L'adresse du siège social est une mention légale obligatoire en France — la page ne pourra pas être publiée sans, sous une forme ou une autre.
-  </div>
+  <p class="updated">Dernière mise à jour : 31 octobre 2026</p>
 
   <h2>Éditeur du site</h2>
   <p>
     Le site est édité par : Léo Lamiral<br>
     Statut : Entrepreneur individuel<br>
     SIRET : 818 840 043 00017<br>
-    Adresse : <span class="todo">à compléter</span><br>
+    Adresse : 37 avenue du Lac, appartement 10, 34800 Clermont-l'Hérault<br>
     Téléphone : <a href="tel:0629685298">06 29 68 52 98</a><br>
     Email : <a href="mailto:contact@leolamiral.com">contact@leolamiral.com</a>
   </p>
@@ -124,8 +101,9 @@
 
   <h2>Hébergement du site</h2>
   <p>
-    Nom de l'hébergeur : <span class="todo">à compléter une fois le site en ligne</span><br>
-    Adresse : <span class="todo">à compléter</span>
+    Nom de l'hébergeur : Netlify, Inc.<br>
+    Adresse : 101 2nd Street, San Francisco, CA 94105, États-Unis<br>
+    Site : <a href="https://www.netlify.com" target="_blank" rel="noopener">www.netlify.com</a>
   </p>
 
   <h2>Crédits</h2>

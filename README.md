@@ -5,7 +5,7 @@ Site vitrine statique (HTML/CSS/JS pur, sans build, sans backend).
 ## Structure
 
 - `index.html` — page principale
-- `mentions-legales.html` — mentions légales (⚠️ contient encore des champs `à compléter` : adresse et hébergeur — voir le bandeau orange sur la page)
+- `mentions-legales.html` — mentions légales
 
 ## Déploiement sur Netlify
 
@@ -20,10 +20,10 @@ Aucune commande de build nécessaire, le site est du HTML statique pur.
 
 ## À faire avant mise en ligne publique définitive
 
-- [ ] Compléter l'adresse dans `mentions-legales.html` (obligatoire légalement en France)
-- [ ] Renseigner le nom de l'hébergeur une fois le déploiement en place
+- [x] Compléter l'adresse dans `mentions-legales.html` (adresse du registre)
+- [x] Renseigner l'hébergeur (Netlify)
 - [ ] Décider de l'ajout ou non de témoignages / tarifs
-- [ ] Nom de domaine personnalisé (optionnel, actuellement sur `*.netlify.app`)
+- [x] Nom de domaine personnalisé (`leolamiral.com`, DNS et emails chez OVH)
 
 ## Formulaire de contact
 
