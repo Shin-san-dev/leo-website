@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mentions légales — Léo Lamiral</title>
 <meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -77,13 +79,23 @@
   a{ color:var(--accent); }
   :focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
   ul{ color:var(--fg-muted); padding-left:20px; }
+  /* logo LL : dessin fourni, sans le fond carré */
+  .logo{ display:flex; align-items:center; gap:12px; }
+  .logo-mark{ width:44px; height:44px; flex-shrink:0; }
 </style>
 </head>
 <body>
 
 <header>
   <div class="wrap">
-    <div class="logo">Léo Lamiral</div>
+    <div class="logo">
+      <svg class="logo-mark" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+        <circle cx="100" cy="100" r="78" fill="none" stroke="#c2a15f" stroke-width="1.5" stroke-dasharray="5 9" stroke-linecap="round" opacity="0.8"/>
+        <g fill="#c2a15f" stroke="#0d0c0a" stroke-width="3" paint-order="stroke"><rect x="22" y="80" width="9" height="40" rx="2.5"/><rect x="33" y="86" width="6" height="28" rx="2"/><rect x="161" y="86" width="6" height="28" rx="2"/><rect x="169" y="80" width="9" height="40" rx="2.5"/></g><g fill="#c2a15f"><rect x="37" y="97.5" width="11" height="5" rx="1.5"/><rect x="152" y="97.5" width="11" height="5" rx="1.5"/></g>
+        <text x="100" y="134" text-anchor="middle" font-family="Instrument Serif, serif" font-size="98" fill="#f3ede2" letter-spacing="-1">LL</text>
+      </svg>
+      Léo Lamiral
+    </div>
     <a href="/">← Retour au site</a>
   </div>
 </header>
