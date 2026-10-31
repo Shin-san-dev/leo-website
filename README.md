@@ -28,4 +28,4 @@ Aucune commande de build nécessaire, le site est du HTML statique pur.
 ## Formulaire de contact
 
 Le formulaire n'a pas de backend : il ouvre directement le client mail du visiteur
-(`mailto:`) pré-rempli vers `leolamiral01@gmail.com`. Rien n'est stocké ni envoyé à un serveur.
+(`mailto:`) pré-rempli vers `contact@leolamiral.com`. Rien n'est stocké ni envoyé à un serveur.
